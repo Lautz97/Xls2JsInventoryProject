@@ -1,7 +1,6 @@
 const serverInit = require("./server")
 const dbInit = require("./mongoose")
 const middlewaresInit = require("./middlewares")
-//const cronJob = require("../services/cronjob")
 
 module.exports = class Initializer {
 	constructor() {}

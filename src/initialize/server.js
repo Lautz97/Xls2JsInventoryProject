@@ -30,6 +30,8 @@ module.exports = class server {
 			//aggiungere qui ogni file contenente routes e la sua url root
 			app.use("/", require("../routes"))
 			app.use("/api", require("../routes/api"))
+			app.use("/cat", require("../routes/CatalogueOperations"))
+			app.use("/cliente", require("../routes/clienteRoutes"))
 		} catch (error) {
 			console.dir(error)
 			return false
